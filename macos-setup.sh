@@ -24,6 +24,7 @@ brew install python3
 brew install go
 brew install jq
 brew install mas
+brew install ngrok
 brew cleanup
 # install from app store
 mas install 539883307 # line
