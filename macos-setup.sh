@@ -8,9 +8,14 @@ brew cask install alfred
 brew cask install docker
 brew cask install google-chrome
 brew cask install slack
-brew cask install spotify
-brew cask install sublime-text
+brew cask install postman
+brew cask install visual-studio-code
+brew cask install iterm2
+brew cask install virtualbox virtualbox-extension-pack
+brew cask install robo-3t
 # install other tools
+brew install zsh
+brew install zsh-completions
 brew install neovim
 brew install bash-completion
 brew install git
@@ -18,8 +23,11 @@ brew install python
 brew install python3
 brew install go
 brew install jq
-brew install watch
+brew install mas
 brew cleanup
+# install from app store
+mas install 539883307 # line
+mas install 497799835 # Xcode
 # install global dev deps
 npm install -g eslint
 npm install -g prettier
@@ -78,3 +86,11 @@ nvim +PlugInstall +qall
 touch file.ts
 nvim file.ts +UpdateRemotePlugins +qall
 rm file.ts
+
+# Set up ZSH
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+## font
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+wget -O ~/Downloads/PowerlineSymbols.otf https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+open ~/Downloads/PowerlineSymbols.otf
