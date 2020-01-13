@@ -1,40 +1,5 @@
 #!/bin/sh
 
-# install homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# install my favourite apps
-brew cask install alfred
-brew cask install docker
-brew cask install google-chrome
-brew cask install slack
-brew cask install postman
-brew cask install visual-studio-code
-brew cask install iterm2
-brew cask install virtualbox virtualbox-extension-pack
-brew cask install robo-3t
-# install other tools
-brew install zsh
-brew install zsh-completions
-brew install neovim
-brew install bash-completion
-brew install git
-brew install python
-brew install python3
-brew install go
-brew install jq
-brew install mas
-brew install ngrok
-brew cleanup
-# install from app store
-mas install 539883307 # line
-mas install 497799835 # Xcode
-# install global dev deps
-npm install -g eslint
-npm install -g prettier
-npm install -g tern
-npm install -g neovim
-
 # set up terminal
 cp .bash_profile ~/.bash_profile
 source ~/.bash_profile
@@ -44,6 +9,15 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 source ~/.bash_profile
 nvm install node  # install latest version
 nvm install --lts # install LTS version
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | zsh
+source ~/.bash_profile
+
+# install global dev deps
+npm install -g eslint
+npm install -g prettier
+npm install -g tern
+npm install -g neovim
 
 # set up Vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -95,3 +69,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 wget -O ~/Downloads/PowerlineSymbols.otf https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 open ~/Downloads/PowerlineSymbols.otf
+pip install --user powerline-status
+pip install --user git+git://github.com/powerline/powerline
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+brew install zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
