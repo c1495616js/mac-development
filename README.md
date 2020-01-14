@@ -9,6 +9,12 @@ that (if you use Vim and happen to share all of my current preferences).
 backup before following the instructions below.
 
 ```bash
-$ git clone https://github.com/nwcalvank/development-environment.git
-$ cd development-environment && ./macos-setup.sh
+$ git clone https://github.com/c1495616js/mac-development.git
+$ cd mac-development && ./index.sh
 ```
+
+## Setup multiple .ssh
+
+https://coderwall.com/p/7smjkq/multiple-ssh-keys-for-different-accounts-on-github-or-gitlab
+http://qbsuranalang.blogspot.com/2015/01/gitgithubgitlab.html
+https://kuanyui.github.io/2016/08/01/git-multiple-ssh-key/
