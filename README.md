@@ -18,3 +18,7 @@ $ cd mac-development && ./index.sh
 https://coderwall.com/p/7smjkq/multiple-ssh-keys-for-different-accounts-on-github-or-gitlab
 http://qbsuranalang.blogspot.com/2015/01/gitgithubgitlab.html
 https://kuanyui.github.io/2016/08/01/git-multiple-ssh-key/
+
+## Error
+
+- https://github.com/zsh-users/zsh-completions/issues/433
