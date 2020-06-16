@@ -22,3 +22,7 @@ https://kuanyui.github.io/2016/08/01/git-multiple-ssh-key/
 ## Error
 
 - https://github.com/zsh-users/zsh-completions/issues/433
+
+## Vscode Plugins
+
+- https://tutorialzine.com/2017/06/15-essential-plugins-for-visual-studio-code
